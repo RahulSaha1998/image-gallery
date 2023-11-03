@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Images } from '../data/ImageData';
 import HeaderSelection from './HeaderSelection';
-import PreviewImage from './PreviewImage';
+import ImagePreview from './ImagePreview';
 import AddImage from './AddImage';
 const Gallery = () => {
     // after select a img it store there 
@@ -107,7 +107,7 @@ const Gallery = () => {
                             <input checked={false} readOnly onClick={() => handleImageClick(image._id)} className='h-5 w-5 ml-5 mt-5 cursor-pointer' type="checkbox" name="checkbox" id={image._id} />
                         </div>
                         {/* when drag start a image then user can see preview  */}
-                        {dragedID == image._id && <PreviewImage draggedImage={draggedImage} />}
+                        {dragedID == image._id && <ImagePreview draggedImage={draggedImage} />}
                     </div>
                     {selectedImages.includes(image._id) && (
                         <div
