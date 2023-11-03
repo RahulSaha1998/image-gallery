@@ -1,11 +1,13 @@
-
+import ImageGallery from "./components/ImageGallery";
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <h2 className='text-2xl'>Welcome to Image gallery Project.</h2>
+      <div className="w-full min-h-screen flex justify-center items-center sm:mb-10 mb-0">
+        <ImageGallery />
+      </div>
     </>
   )
 }
