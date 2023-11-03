@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Images } from '../data/ImageData';
-import AfterSelectHeader from './AfterSelectHeader';
+import HeaderSelection from './HeaderSelection';
 import PreviewImage from './PreviewImage';
 import AddImage from './AddImage';
 const Gallery = () => {
@@ -74,7 +74,7 @@ const Gallery = () => {
 
         {selectedImages.length === 0 ? <p className='text-xl font-bold p-5 flex items-center '>Gallery</p>
             :
-            <AfterSelectHeader handleUnselect={handleUnselect} selectedImages={selectedImages} handleDelete={handleDelete} />
+            <HeaderSelection handleUnselect={handleUnselect} selectedImages={selectedImages} handleDelete={handleDelete} />
         }
 
         <hr className='border-0 h-2 bg-gray-700 mb-3' />
